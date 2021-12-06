@@ -127,7 +127,7 @@ resource "aws_instance" "my-instance" {
       # "sudo systemctl start apache2",
       "sudo rm -rf /var/www/html/*",
       "touch index.html",
-      "sudo echo Hi this is Harish, I'd like to join Xylem. >> index.html",
+      "sudo echo Hi this is Harish, I would like to join Xylem. >> index.html",
       "sudo mv index.html /var/www/html/",
       "sudo systemctl restart apache2"
     ]
