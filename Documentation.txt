@@ -1,0 +1,24 @@
+1. Installing Terraform on Linux (Ubuntu 20.04 LTS)
+	
+	Repository configuration
+	
+	curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+	
+	sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+	
+	sudo apt install terraform
+	
+	terraform version or terraform -v
+
+
+2. 
+
+VPC 
+2 Subnets
+Route table
+Internet gateway
+EC2
+
+Ansible
+Nginx or Apache
+

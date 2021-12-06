@@ -1,0 +1,6 @@
+region                   = "us-east-1"
+vpc_cidr_block           = "10.0.0.0/16"
+public-subnet-cidr_block = "10.0.0.0/24"
+ami                      = "ami-083654bd07b5da81d"
+instance_type            = "t2.micro"
+security_group           = "my-security-group"
