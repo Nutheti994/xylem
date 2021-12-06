@@ -126,9 +126,10 @@ resource "aws_instance" "my-instance" {
       "sudo apt install apache2 -y",
       # "sudo systemctl start apache2",
       "sudo rm -rf /var/www/html/*",
-      "sudo touch /var/www/html/index.html",
-      "sudo echo Hi this is Hariharan EP >> /var/www/html/index.html",
-      "sudo systemctl restart apche2"
+      "touch index.html",
+      "sudo echo Hi this is Harish, I'd like to join Xylem. >> index.html",
+      "sudo mv index.html /var/www/html/",
+      "sudo systemctl restart apache2"
     ]
   }
 
@@ -141,4 +142,9 @@ resource "aws_instance" "my-instance" {
   tags = {
     Name = "my-instance"
   }
+}
+
+output "instance_public_ip" {
+  description = "Public IP address of the EC2 instance"
+  value       = aws_instance.my-instance.public_ip
 }
